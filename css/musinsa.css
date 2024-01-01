@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration:none
+}
+ul,ol {
+    list-style: none;
+}
+
+#wrap {
+    width: 1920px;
+    border: 1px solid red;
+    margin: 0 auto;
+    position: relative;
+}
+#wrap .all header {
+    width: 100%;
+    border: 1px solid red;
+    background-color: orange;
+    display: flex;
+}
