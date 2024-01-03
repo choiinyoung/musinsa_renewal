@@ -41,36 +41,41 @@ footer {
 /* header */
 #wrap header {
   width: 100%;
-  height: 4vh;
+  height: 7vh;
   /* border: 1px solid red; */
   display: flex;
+  line-height: 7vh;
 }
 
 #wrap header .center {
   display: flex;
   /* border: 1px solid red; */
   margin: 0 auto;
-  line-height: 4vh;
+  align-items: center;
 }
 
 #wrap .center .list {
   position: absolute;
-  left: 5%;
+  width: 2.5vw;
 }
 
 #wrap .center .logo {
   margin: 0 auto;
+  width: 13vw;
+  height: 5vh;
 }
 
 #wrap .center .icon {
   /* border: 1px solid red; */
-  width: 10%;
+  width: 9vw;
   display: flex;
   justify-content: space-between;
   position: absolute;
   right: 5%;
 }
-
+#wrap .center .icon img {
+  width: 2vw;
+}
 /* main */
 #wrap section .main {
   width: 100%;
@@ -89,7 +94,6 @@ footer {
   position: relative;
   top: -8vh;
 }
-
 
 #wrap .best .center .title {
   width: 15vw;
@@ -208,10 +212,16 @@ footer {
 }
 
 #wrap .brand .brand_controller img {
+  position: relative;
   width: 10vw;
   /* border: 1px solid; */
+  transition: all 0.5s ease-in;
+  cursor: pointer;
 }
-
+#wrap .brand .brand_controller .brand_menu li:hover img {
+  width: 15vw;
+  /* border: 1px solid; */
+}
 #wrap .brand .brand_controller .brand_menu {
   display: flex;
   flex-wrap: wrap;
@@ -284,10 +294,14 @@ footer {
 #wrap .product .sale .sale_box {
   width: 50vw;
   height: 110vh;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.15);
   /* background-color: orange; */
   position: absolute;
   z-index: 10;
+
+  cursor: pointer;
+
+  transition: all 0.5s ease-in;
 }
 
 #wrap .product .season h2 {
@@ -299,18 +313,44 @@ footer {
 }
 
 #wrap .product .season .season_box {
-  width: 50vw;
+  width: 80vw;
   height: 110vh;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.15);
 
   position: absolute;
   z-index: 10;
+
+  cursor: pointer;
+  transition: all 0.5s ease-in;
 }
 
-#wrap .product .product {
+#wrap .product .product_list {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  /* z-index: 20; */
 }
 
+#wrap .product .sale .sale_box:hover {
+  width: 80vw;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#wrap .product .sale .sale_box:hover .product_list {
+  display: block;
+}
+
+#wrap .product .season .season_box:hover {
+  left: 20vw;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#wrap .product .season .season_box:hover .product_list {
+  display: block;
+}
 /* magazine */
 
 #wrap .magazine {
@@ -339,7 +379,7 @@ footer {
   width: 89vw;
   position: absolute;
   /* border: 1px solid blue; */
-  top: 35vh;
+  top: 40vh;
   justify-content: space-between;
 }
 
@@ -483,7 +523,7 @@ footer {
 #wrap .magazine .center ul li:nth-child(4) .txt {
   position: absolute;
   top: 26vh;
-  left: 55.5vw;
+  left: 1vw;
   font-size: 2vh;
 }
 
@@ -526,7 +566,7 @@ footer {
   height: 38vh;
   background-color: black;
   color: white;
-  position: relative
+  position: relative;
 }
 
 #wrap footer .center {
@@ -607,7 +647,7 @@ footer {
   line-height: 1.6;
 }
 
-#wrap footer .center>p {
+#wrap footer .center > p {
   font-size: 0.8vw;
   color: gray;
   position: absolute;

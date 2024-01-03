@@ -1,382 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>musinsa</title>
+    <link rel="stylesheet" href="css/musinsa.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>musinsa</title>
-  <link rel="stylesheet" href="css/musinsa.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" />
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/jquery.bxslider.min.js"></script>
 
-  <script src="lib/jquery-3.4.1.min.js"></script>
-  <script src="lib/jquery.bxslider.min.js"></script>
+    <style>
+      .bx-wrapper {
+        border: 0;
+        background: #fbfbfb;
+        box-shadow: none;
+      }
+    </style>
+    <script>
+      $(function () {
+        $(".bxslider").bxSlider({
+          auto: true,
+          speed: 300,
+          pause: 4000,
+          mode: "fade",
+          pager: false,
+          controls: false,
+          slideWidth: 1920,
+        });
 
-  <style>
-    .bx-wrapper {
-      border: 0;
-      background: #fbfbfb;
-      box-shadow: none;
-    }
-  </style>
-  <script>
-    $(function () {
-      $(".bxslider").bxSlider({
-        auto: true,
-        speed: 300,
-        pause: 4000,
-        mode: "fade",
-        pager: false,
-        controls: false,
-        slideWidth: 1920,
+        $(".bxslider").bxSlider({
+          slideWidth: 700,
+          maxSlides: 3,
+          minSlides: 3,
+          moveSlides: 1,
+          auto: true,
+          autoControls: true,
+          pager: false,
+        });
       });
-    });
-  </script>
-</head>
+    </script>
+  </head>
 
-<body>
-  <div id="wrap">
-    <header>
-      <div class="center">
-        <img src="images/header/icon1.png" alt="햄버거" class="list" />
-        <img src="images/header/musinsa_logo.png" alt="로고" class="logo" />
-        <div class="icon">
-          <img src="images/header/icon2.png" alt="돋보기" />
-          <img src="images/header/icon3.png" alt="장바구니" />
-          <img src="images/header/icon4.png" alt="사람" />
-        </div>
-      </div>
-    </header>
-
-    <section>
-      <div class="main">
-        <ul class="bxslider">
-          <li>
-            <img src="/images/main/banner1.png" alt="banner1" />
-          </li>
-          <li>
-            <img src="/images/main/banner2.png" alt="banner2" />
-          </li>
-          <li>
-            <img src="/images/main/banner3.png" alt="banner3" />
-          </li>
-        </ul>
-      </div>
-      <div class="best">
+  <body>
+    <div id="wrap">
+      <header>
         <div class="center">
-          <div class="title">
-            <h2>BEST</h2>
-            <p>인기 상품</p>
-          </div>
-          <div class="best_controller">
-            <ul class="list">
-              <li>TOP</li>
-              <li>PANTS</li>
-              <li>SHOES</li>
-              <li>BAG</li>
-              <li>ACC</li>
-            </ul>
-
-            <ul class="best_product">
-              <li>
-                <img src="/images/best/best1.png" alt="best1" />
-                <h3>CODEGRAPHY</h3>
-                <p>WAVE logo crop layard ivory ja...</p>
-                <p>124,000won</p>
-              </li>
-              <li>
-                <img src="/images/best/best2.png" alt="best2" />
-                <h3>GROOVERHYME</h3>
-                <p>LRSFCTM755MLRSFCTH77...</p>
-                <p>59,000won</p>
-              </li>
-              <li>
-                <img src="/images/best/best3.png" alt="best3" />
-                <h3>CALVIN KLEIN</h3>
-                <p>LRSFCTM755MLRSFCTH77...</p>
-                <p>299,000won</p>
-              </li>
-            </ul>
+          <img src="images/header/icon1.png" alt="햄버거" class="list" />
+          <img src="images/header/musinsa_logo.png" alt="로고" class="logo" />
+          <div class="icon">
+            <img src="images/header/icon2.png" alt="돋보기" />
+            <img src="images/header/icon3.png" alt="장바구니" />
+            <img src="images/header/icon4.png" alt="사람" />
           </div>
         </div>
-      </div>
-      <div class="brand">
-        <div class="center">
-          <div class="title">
-            <h2>TOP BRAND</h2>
-            <p>인기브랜드</p>
-          </div>
+      </header>
 
-          <div class="brand_controller">
-            <ul class="brand_menu">
-              <li>
-                <img src="images/brand/topbrand1.png" alt="topbrand1" />
-              </li>
-              <li>
-                <img src="images/brand/topbrand2.png" alt="topbrand2" />
-              </li>
-              <li>
-                <img src="images/brand/topbrand3.png" alt="topbrand3" />
-              </li>
-              <li>
-                <img src="images/brand/topbrand4.png" alt="topbrand4" />
-              </li>
-              <li>
-                <img src="images/brand/topbrand5.png" alt="topbrand5" />
-              </li>
-              <li>
-                <img src="images/brand/topbrand6.png" alt="topbrand6" />
-              </li>
-              <li>
-                <img src="images/brand/topbrand7.png" alt="topbrand7" />
-              </li>
-              <li>
-                <img src="images/brand/topbrand8.png" alt="topbrand8" />
-              </li>
-              <li>
-                <img src="images/brand/topbrand9.png" alt="topbrand9" />
-              </li>
-              <li>
-                <img src="images/brand/topbrand9.png" alt="topbrand10" />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="banner">
-        <div class="banner_content center">
-          <ul class="txt">
+      <section>
+        <div class="main">
+          <ul class="bxslider">
             <li>
-              <p>20%할인 쿠폰</p>
-              <p>가입 후 30일 동안 사용 가능</p>
+              <img src="/images/main/banner1.png" alt="banner1" />
             </li>
             <li>
-              <p>전 상품 무료배송</p>
-              <p>365일</p>
+              <img src="/images/main/banner2.png" alt="banner2" />
+            </li>
+            <li>
+              <img src="/images/main/banner3.png" alt="banner3" />
             </li>
           </ul>
         </div>
-      </div>
-      <div class="product">
-        <div class="sale">
-          <div class="sale_box"></div>
-          <img src="images/product/sale/sale_main.png" alt="sale_main" class="main" />
-          <h2>SALE</h2>
-          <div class="product">
+        <div class="best">
+          <div class="center">
+            <div class="title">
+              <h2>BEST</h2>
+              <p>인기 상품</p>
+            </div>
+            <div class="best_controller">
+              <ul class="list">
+                <li>TOP</li>
+                <li>PANTS</li>
+                <li>SHOES</li>
+                <li>BAG</li>
+                <li>ACC</li>
+              </ul>
+
+              <ul class="best_product">
+                <li>
+                  <img src="/images/best/best1.png" alt="best1" />
+                  <h3>CODEGRAPHY</h3>
+                  <p>WAVE logo crop layard ivory ja...</p>
+                  <p>124,000won</p>
+                </li>
+                <li>
+                  <img src="/images/best/best2.png" alt="best2" />
+                  <h3>GROOVERHYME</h3>
+                  <p>LRSFCTM755MLRSFCTH77...</p>
+                  <p>59,000won</p>
+                </li>
+                <li>
+                  <img src="/images/best/best3.png" alt="best3" />
+                  <h3>CALVIN KLEIN</h3>
+                  <p>LRSFCTM755MLRSFCTH77...</p>
+                  <p>299,000won</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="brand">
+          <div class="center">
+            <div class="title">
+              <h2>TOP BRAND</h2>
+              <p>인기브랜드</p>
+            </div>
+
+            <div class="brand_controller">
+              <ul class="brand_menu">
+                <li>
+                  <img src="images/brand/topbrand1.png" alt="topbrand1" />
+                </li>
+                <li>
+                  <img src="images/brand/topbrand2.png" alt="topbrand2" />
+                </li>
+                <li>
+                  <img src="images/brand/topbrand3.png" alt="topbrand3" />
+                </li>
+                <li>
+                  <img src="images/brand/topbrand4.png" alt="topbrand4" />
+                </li>
+                <li>
+                  <img src="images/brand/topbrand5.png" alt="topbrand5" />
+                </li>
+                <li>
+                  <img src="images/brand/topbrand6.png" alt="topbrand6" />
+                </li>
+                <li>
+                  <img src="images/brand/topbrand7.png" alt="topbrand7" />
+                </li>
+                <li>
+                  <img src="images/brand/topbrand8.png" alt="topbrand8" />
+                </li>
+                <li>
+                  <img src="images/brand/topbrand9.png" alt="topbrand9" />
+                </li>
+                <li>
+                  <img src="images/brand/topbrand9.png" alt="topbrand10" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="banner_content center">
+            <ul class="txt">
+              <li>
+                <p>20%할인 쿠폰</p>
+                <p>가입 후 30일 동안 사용 가능</p>
+              </li>
+              <li>
+                <p>전 상품 무료배송</p>
+                <p>365일</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="product">
+          <div class="sale">
+            <div class="sale_box">
+              <div class="product_list">
+                <ul>
+                  <li>
+                    <img src="" alt="" />
+                    <h3>스파오</h3>
+                    <p>베이직 퍼블리스 집업</p>
+                    <p>29,000</p>
+                    <p>27,400won</p>
+                  </li>
+                  <li>
+                    <img src="" alt="" />
+                    <h3>제로</h3>
+                    <p>Deep One Tuck Sweat Pants</p>
+                    <p>39,000</p>
+                    <p>35,100won</p>
+                  </li>
+                  <li>
+                    <img src="" alt="" />
+                    <h3>일오공칠</h3>
+                    <p>1507 모노 트라우져 핳프 삭스</p>
+                    <p>24,000</p>
+                    <p>15,900won</p>
+                  </li>
+                  <li>
+                    <img src="" alt="" />
+                    <h3>무신사 스탠다드</h3>
+                    <p>브이넥 라이트 다운베스트[블략]</p>
+                    <p>49,000</p>
+                    <p>34,890won</p>
+                  </li>
+                  <li>
+                    <img src="" alt="" />
+                    <h3>오드스튜디오</h3>
+                    <p>베이직 니트 체크 머플러</p>
+                    <p>39,900</p>
+                    <p>25,800won</p>
+                  </li>
+                  <li>
+                    <img src="" alt="" />
+                    <h3>잉가</h3>
+                    <p>[5color] 타투 파운데이선 30ml</p>
+                    <p>25,000</p>
+                    <p>3,500won</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <h2>SALE</h2>
+            <img
+              src="images/product/sale/sale_main.png"
+              alt="sale_main"
+              class="main"
+            />
+          </div>
+          <div class="season">
+            <div class="season_box">
+              <div class="product_list">
+                <ul>
+                  <li>
+                    <img src="" alt="" />
+                    <h3>메인부스</h3>
+                    <p>[울100%]Oversized Duffle Coat</p>
+                    <p>227,500won</p>
+                  </li>
+                  <li>
+                    <img src="" alt="" />
+                    <h3>인사일런스</h3>
+                    <p>MTR 캐시미어 더블코트 BEIGE</p>
+                    <p>328,000won</p>
+                  </li>
+                  <li>
+                    <img src="" alt="" />
+                    <h3>브이투</h3>
+                    <p>VEGAN LEATHER MUSTANG_BLACK</p>
+                    <p>118,150won</p>
+                  </li>
+                  <li>
+                    <img src="" alt="" />
+                    <h3>데꼬로소</h3>
+                    <p>테일러드 롱 코트 [오트밀]</p>
+                    <p>256,500won</p>
+                  </li>
+                  <li>
+                    <img src="" alt="" />
+                    <h3>헤지스</h3>
+                    <p>울 캐시미어 혼방 발마칸 코트</p>
+                    <p>419,000won</p>
+                  </li>
+                  <li>
+                    <img src="" alt="" />
+                    <h3>메인부스</h3>
+                    <p>[울90%]Oversized Duffle Coat(PINK)</p>
+                    <p>227,500won</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <h2>SEASON</h2>
+            <img
+              src="images/product/season/Untitled-1.png"
+              alt="season_main"
+              class="main"
+            />
+          </div>
+        </div>
+        <div class="magazine">
+          <div class="center">
+            <h2>MUSINSA Magazine</h2>
+
+            <div class="bx-wrapper">
+              <div class="bx-viewport">
+                <ul class="magazine_slider">
+                  <li>
+                    <div class="magazine_icon">
+                      <img
+                        src="/images/magazine/magazine1_icon.png"
+                        alt="magazine1_icon"
+                      />
+                    </div>
+                    <img
+                      src="/images/magazine/magazine1.jpg"
+                      alt="magazine1"
+                      class="magazizne_img"
+                    />
+
+                    <div class="txt">
+                      <p>도시의 일상과 골프 사이에서</p>
+                      <div class="white_box">완벽한 조화</div>
+                      <p>를 찾다</p>
+                    </div>
+
+                    <p class="insta">@18ober</p>
+                  </li>
+                  <li>
+                    <div class="magazine_icon">
+                      <img
+                        src="/images/magazine/magazine2_icon.png"
+                        alt="magazine2_icon"
+                      />
+                    </div>
+                    <img
+                      src="/images/magazine/magazine2.png"
+                      alt="magazine2"
+                      class="magazizne_img"
+                    />
+
+                    <div class="txt">
+                      <p>#모던 #우아 #미니멀</p>
+                      <p>#버터플라이디자인 #다채로운컬러구성</p>
+                    </div>
+                    <p class="insta">@nicknicole</p>
+                  </li>
+                  <li>
+                    <div class="magazine_icon">
+                      <img
+                        src="/images/magazine/magazine3_icon.png"
+                        alt="magazine3_icon"
+                      />
+                    </div>
+                    <img
+                      src="/images/magazine/magazine3.png"
+                      alt="magazine3"
+                      class="magazizne_img"
+                    />
+                    <div class="txt">
+                      <p class="first">이용대 선수가 제안하는</p>
+                      <p>
+                        가장 따뜻한 겨울을 보내는 방법
+                        <img
+                          src="/images/magazine/eye.png"
+                          alt="eye"
+                          class="eye"
+                        />
+                      </p>
+                    </div>
+                    <p class="insta">@mpacplus</p>
+                    <div class="gray_box1"></div>
+                    <div class="gray_box2"></div>
+                  </li>
+                  <li>
+                    <div class="magazine_icon">
+                      <img
+                        src="/images/magazine/magazine4_icon.png"
+                        alt="magazine4_icon"
+                      />
+                    </div>
+                    <img
+                      src="/images/magazine/magazine4.png"
+                      alt="magazine4"
+                      class="magazizne_img"
+                    />
+
+                    <div class="txt">
+                      <p>스타일 추천</p>
+                      <p>담백하지만</p>
+                      <p>강력하고! 덤덤하게!</p>
+                    </div>
+                    <p class="insta">@magiay</p>
+                  </li>
+                  <li>
+                    <div class="magazine_icon">
+                      <img
+                        src="/images/magazine/magazine5_icon.png"
+                        alt="magazine5_icon"
+                      />
+                    </div>
+                    <img
+                      src="/images/magazine/magazine5.png"
+                      alt="magazine5"
+                      class="magazizne_img"
+                    />
+                    <div class="txt">
+                      <p>겨울에 진심인 블랭크룸의</p>
+                      <span>
+                        <span class="color">3가지 아우터</span> 추천
+                      </span>
+                    </div>
+                    <p class="insta">@blankroom</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="center">
+          <ul class="f_list">
+            <li>회사소개</li>
+            <li>이용안내</li>
+            <li>고객지원</li>
+            <li>개인정보처리방침</li>
+            <li>공지사항</li>
+            <li>이벤트 공지</li>
+            <li>이용약관</li>
+          </ul>
+          <div class="call">
+            <div class="number">
+              <p>고객센터</p>
+              <p>0000-0000</p>
+            </div>
+            <p class="time">평일 오전 9시 ~ 오후 6시</p>
+            <div class="btn">
+              <p>자주 묻는 질문</p>
+            </div>
+          </div>
+          <div class="store">
+            <h3>무신사 스토어</h3>
             <ul>
-              <li>
-                <img src="" alt="" />
-                <h3>스파오</h3>
-                <p>베이직 퍼블리스 집업</p>
-                <p>29,000</p>
-                <p>27,400won</p>
-                <hr />
-              </li>
-              <li>
-                <img src="" alt="" />
-                <h3>제로</h3>
-                <p>Deep One Tuck Sweat Pants</p>
-                <p>39,000</p>
-                <p>35,100won</p>
-                <hr />
-              </li>
-              <li>
-                <img src="" alt="" />
-                <h3>일오공칠</h3>
-                <p>1507 모노 트라우져 핳프 삭스</p>
-                <p>24,000</p>
-                <p>15,900won</p>
-                <hr />
-              </li>
-              <li>
-                <img src="" alt="" />
-                <h3>무신사 스탠다드</h3>
-                <p>브이넥 라이트 다운베스트[블략]</p>
-                <p>49,000</p>
-                <p>34,890won</p>
-                <hr />
-              </li>
-              <li>
-                <img src="" alt="" />
-                <h3>오드스튜디오</h3>
-                <p>베이직 니트 체크 머플러</p>
-                <p>39,900</p>
-                <p>25,800won</p>
-                <hr />
-              </li>
-              <li>
-                <img src="" alt="" />
-                <h3>잉가</h3>
-                <p>[5color] 타투 파운데이선 30ml</p>
-                <p>25,000</p>
-                <p>3,500won</p>
-                <hr />
-              </li>
+              <li>(17759) 경기도 평택시 신장로 55 CJ대한통운 평택합정집배점</li>
+              <li>(무신사 스토어 자체배송 상품 물류센터)</li>
+              <li>(배송센터 직접 물건 수령 불가)</li>
             </ul>
           </div>
+
+          <p>
+            [2023] Suna & InYoung. All rights reserved. 모든 사진의 저작권은
+            무신사닷컴(www.musinsa.com)에 속합니다
+          </p>
         </div>
-        <div class="season">
-          <div class="season_box"></div>
-          <img src="images/product/season/Untitled-1.png" alt="season_main" class="main" />
-          <h2>SEASON</h2>
-          <div class="product">
-            <ul>
-              <li>
-                <img src="" alt="" />
-                <h2>메인부스</h2>
-                <p>[울100%]Oversized Duffle Coat</p>
-                <p>227,500won</p>
-              </li>
-              <li>
-                <img src="" alt="" />
-                <h2>인사일런스</h2>
-                <p>MTR 캐시미어 더블코트 BEIGE</p>
-                <p>328,000won</p>
-              </li>
-              <li>
-                <img src="" alt="" />
-                <h2>브이투</h2>
-                <p>VEGAN LEATHER MUSTANG_BLACK</p>
-                <p>118,150won</p>
-              </li>
-              <li>
-                <img src="" alt="" />
-                <h2>데꼬로소</h2>
-                <p>테일러드 롱 코트 [오트밀]</p>
-                <p>256,500won</p>
-              </li>
-              <li>
-                <img src="" alt="" />
-                <h2>헤지스</h2>
-                <p>울 캐시미어 혼방 발마칸 코트</p>
-                <p>419,000won</p>
-              </li>
-              <li>
-                <img src="" alt="" />
-                <h2>메인부스</h2>
-                <p>[울90%]Oversized Duffle Coat(PINK)</p>
-                <p>227,500won</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="magazine">
-        <div class="center">
-          <h2>MUSINSA Magazine</h2>
-
-          <ul>
-            <li>
-              <div class="magazine_icon">
-                <img src="/images/magazine/magazine1_icon.png" alt="magazine1_icon" />
-              </div>
-              <img src="/images/magazine/magazine1.jpg" alt="magazine1" class="magazizne_img" />
-
-              <div class="txt">
-                <p>도시의 일상과 골프 사이에서</p>
-                <div class="white_box">완벽한 조화</div>
-                <p> 를 찾다</p>
-              </div>
-
-              <p class="insta">@18ober</p>
-            </li>
-            <li>
-              <div class="magazine_icon">
-                <img src="/images/magazine/magazine2_icon.png" alt="magazine2_icon" />
-              </div>
-              <img src="/images/magazine/magazine2.png" alt="magazine2" class="magazizne_img" />
-
-              <div class="txt">
-                <p>#모던 #우아 #미니멀</p>
-                <p>#버터플라이디자인 #다채로운컬러구성</p>
-              </div>
-              <p class="insta">@nicknicole</p>
-            </li>
-            <li>
-              <div class="magazine_icon">
-                <img src="/images/magazine/magazine3_icon.png" alt="magazine3_icon" />
-              </div>
-              <img src="/images/magazine/magazine3.png" alt="magazine3" class="magazizne_img" />
-              <div class="txt">
-                <p class="first">이용대 선수가 제안하는</p>
-                <p>가장 따뜻한 겨울을 보내는 방법
-                  <img src="/images/magazine/eye.png" alt="eye" class="eye" />
-                </p>
-              </div>
-              <p class="insta">@mpacplus</p>
-              <div class="gray_box1"></div>
-              <div class="gray_box2"></div>
-            </li>
-            <li>
-              <div class="magazine_icon">
-                <img src="/images/magazine/magazine4_icon.png" alt="magazine4_icon" />
-              </div>
-              <img src="/images/magazine/magazine4.png" alt="magazine4" class="magazizne_img" />
-
-              <div class="white_bottom"></div>
-              <div class="txt">
-                <p>스타일 추천</p>
-                <p>담백하지만</p>
-                <p>강력하고! 덤덤하게!</p>
-              </div>
-              <p class="insta">@magiay</p>
-            </li>
-            <li>
-              <div class="magazine_icon">
-                <img src="/images/magazine/magazine5_icon.png" alt="magazine5_icon" />
-              </div>
-              <img src="/images/magazine/magazine5.png" alt="magazine5" class="magazizne_img" />
-              <div class="txt">
-                <p>겨울에 진심인 블랭크룸의</p>
-                <span>
-                  <span class="color">3가지 아우터</span> 추천
-                </span>
-              </div>
-              <p class="insta">@blankroom</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="center">
-        <ul class="f_list">
-          <li>회사소개</li>
-          <li>이용안내</li>
-          <li>고객지원</li>
-          <li>개인정보처리방침</li>
-          <li>공지사항</li>
-          <li>이벤트 공지</li>
-          <li>이용약관</li>
-        </ul>
-        <div class="call">
-          <div class="number">
-            <p>고객센터</p>
-            <p>0000-0000</p>
-          </div>
-          <p class="time">평일 오전 9시 ~ 오후 6시</p>
-          <div class="btn">
-            <p>자주 묻는 질문</p>
-          </div>
-          </li>
-          </ul>
-        </div>
-        <div class="store">
-          <h3>무신사 스토어</h3>
-          <ul>
-            <li>(17759) 경기도 평택시 신장로 55 CJ대한통운 평택합정집배점</li>
-            <li>(무신사 스토어 자체배송 상품 물류센터)</li>
-            <li>(배송센터 직접 물건 수령 불가)</li>
-          </ul>
-        </div>
-
-        <p>
-          [2023] Suna & InYoung. All rights reserved. 모든 사진의 저작권은
-          무신사닷컴(www.musinsa.com)에 속합니다
-        </p>
-      </div>
-    </footer>
-  </div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>
