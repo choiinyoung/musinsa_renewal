@@ -1,24 +1,616 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration:none
+  text-decoration: none;
 }
-ul,ol {
-    list-style: none;
+
+ul,
+ol {
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 #wrap {
-    width: 1920px;
-    border: 1px solid red;
-    margin: 0 auto;
-    position: relative;
+  width: 100%;
+  height: 110vh;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  position: relative;
 }
-#wrap .all header {
-    width: 100%;
-    border: 1px solid red;
-    background-color: orange;
-    display: flex;
+
+header,
+section,
+footer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.center {
+  width: 90%;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+/* header */
+#wrap header {
+  width: 100%;
+  height: 4vh;
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+#wrap header .center {
+  display: flex;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  line-height: 4vh;
+}
+
+#wrap .center .list {
+  position: absolute;
+  left: 5%;
+}
+
+#wrap .center .logo {
+  margin: 0 auto;
+}
+
+#wrap .center .icon {
+  /* border: 1px solid red; */
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 5%;
+}
+
+/* main */
+#wrap section .main {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  /* border: 1px solid blueviolet; */
+}
+
+/* best */
+#wrap .best {
+  width: 100%;
+  height: 110vh;
+  background-color: black;
+  position: relative;
+  top: -8vh;
+}
+
+
+#wrap .best .center .title {
+  width: 15vw;
+  height: 10vh;
+  position: relative;
+  top: 20vh;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.2;
+}
+
+#wrap .best .center .title h2 {
+  color: white;
+  font-size: 2vw;
+}
+
+#wrap .best .center .title p {
+  color: gray;
+  font-size: 1.5vh;
+}
+
+#wrap .best .center .best_controller {
+  width: 100%;
+  height: 65vh;
+  /* background-color: skyblue; */
+  display: flex;
+  justify-content: space-between;
+}
+
+#wrap .best .center .best_controller ul.list {
+  color: gray;
+  font-size: 2vw;
+  width: 15vw;
+  height: 35vh;
+  line-height: 2;
+  position: absolute;
+  left: 5.5vw;
+  top: 38vh;
+}
+
+#wrap .best .center .best_controller ul.best_product {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  top: 34vh;
+  right: 5.5vw;
+  text-align: center;
+  /* border: 1px solid red; */
+  width: 70vw;
+}
+
+#wrap .best .center .best_controller ul.best_product li img {
+  width: 22.5vw;
+}
+
+#wrap .best .center ul.best_product {
+  text-align: center;
+  color: white;
+}
+
+#wrap .best .center ul.best_product h3 {
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  font-size: 1.1vw;
+}
+
+#wrap .best .center ul.best_product p {
+  font-size: 0.8vw;
+}
+
+#wrap .best .center .list li:nth-child(1) {
+  color: white;
+}
+
+#wrap .best .center .list li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/* brand */
+
+#wrap .brand {
+  width: 100%;
+  height: 110vh;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+#wrap .brand .center .title {
+  width: 30vw;
+  height: 10vh;
+  position: relative;
+  top: 15vh;
+  margin: 0 auto;
+  text-align: center;
+  /* border: 1px solid red; */
+  line-height: 1.2;
+}
+
+#wrap .brand .title h2 {
+  font-size: 2vw;
+}
+
+#wrap .brand .title p {
+  color: gray;
+  font-size: 1.5vh;
+}
+
+#wrap .brand .brand_controller {
+  width: 100%;
+  height: 27vw;
+  margin: 0 auto;
+  position: relative;
+  top: 25vh;
+  /* background-color: orange; */
+}
+
+#wrap .brand .brand_controller img {
+  width: 10vw;
+  /* border: 1px solid; */
+}
+
+#wrap .brand .brand_controller .brand_menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5vw 15vh;
+}
+
+/* banner */
+#wrap .banner {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+#wrap .banner .banner_content {
+  width: 100%;
+  height: 6vh;
+  margin: 0 auto;
+  color: white;
+  position: relative;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  top: 2vh;
+}
+
+#wrap .banner .banner_content .txt {
+  width: 90%;
+  /* border: 1px solid red; */
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  font-size: 1.1vw;
+  line-height: 6vh;
+}
+
+#wrap .banner .banner_content .txt li {
+  display: flex;
+}
+
+#wrap .banner .banner_content .txt li p {
+  /* border: 1px solid red; */
+  padding-left: 2vw;
+  box-sizing: border-box;
+}
+
+/* product */
+
+#wrap .product {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  position: relative;
+}
+
+#wrap .product .main {
+  position: relative;
+  width: 50vw;
+  height: 110vh;
+}
+
+#wrap .product .sale h2 {
+  position: absolute;
+  color: white;
+  font-size: 3vw;
+  top: 50vh;
+  left: 20vw;
+}
+
+#wrap .product .sale .sale_box {
+  width: 50vw;
+  height: 110vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  /* background-color: orange; */
+  position: absolute;
+  z-index: 10;
+}
+
+#wrap .product .season h2 {
+  position: absolute;
+  color: white;
+  font-size: 3vw;
+  top: 50vh;
+  right: 18vw;
+}
+
+#wrap .product .season .season_box {
+  width: 50vw;
+  height: 110vh;
+  background-color: rgba(255, 255, 255, 0.4);
+
+  position: absolute;
+  z-index: 10;
+}
+
+#wrap .product .product {
+  display: none;
+}
+
+/* magazine */
+
+#wrap .magazine {
+  width: 100%;
+  height: 110vh;
+  position: relative;
+}
+
+#wrap .magazine h2 {
+  font-size: 2vw;
+  position: absolute;
+  top: 13vh;
+}
+
+#wrap .magazine .magazine_icon {
+  width: 10vw;
+}
+
+#wrap .magazine .magazizne_img {
+  width: 16vw;
+  border-radius: 5%;
+}
+
+#wrap .magazine .center ul {
+  display: flex;
+  width: 89vw;
+  position: absolute;
+  /* border: 1px solid blue; */
+  top: 35vh;
+  justify-content: space-between;
+}
+
+#wrap .magazine .center ul li .magazine_icon {
+  position: absolute;
+  width: 3vw;
+  height: 6vh;
+  background: white;
+  border: 0.2vw solid black;
+  border-radius: 50%;
+  top: 1vh;
+  margin-left: 0.5vw;
+}
+
+#wrap .magazine .center ul li:nth-child(1) .magazine_icon img {
+  width: 2.2vw;
+  height: 5vh;
+  position: absolute;
+  left: 0.4vw;
+  top: 0.2vh;
+}
+
+#wrap .magazine .center ul li:nth-child(2) .magazine_icon img {
+  width: 2.7vw;
+  height: 2.7vh;
+  position: absolute;
+  left: 0.1vw;
+  top: 1.5vh;
+}
+
+#wrap .magazine .center ul li:nth-child(3) .magazine_icon img {
+  width: 3vw;
+  height: 1.8vh;
+  position: absolute;
+  top: 2.1vh;
+}
+
+#wrap .magazine .center ul li:nth-child(4) .magazine_icon img {
+  width: 2.9vw;
+  height: 2vh;
+  position: absolute;
+  left: 0.1vw;
+  top: 2vh;
+}
+
+#wrap .magazine .center ul li:nth-child(5) .magazine_icon img {
+  width: 2.8vw;
+  height: 1.8vh;
+  position: absolute;
+  left: 0.1vw;
+  top: 2.2vh;
+}
+
+#wrap .magazine .center ul li .txt {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+}
+
+#wrap .magazine .center ul li:nth-child(1) .txt {
+  position: absolute;
+  font-size: 1vw;
+  text-align: center;
+  line-height: 1.6;
+  top: 28vh;
+  left: 1.5vw;
+}
+
+#wrap .magazine .center ul li:nth-child(1) .txt .white_box {
+  position: absolute;
+  width: 6vw;
+  background-color: white;
+  left: 1.8vw;
+  color: black;
+}
+
+#wrap .magazine .center ul li:nth-child(1) .txt p:last-child {
+  position: absolute;
+  right: 1.9vw;
+}
+
+#wrap .magazine .center ul li:nth-child(2) .txt {
+  position: absolute;
+  text-align: center;
+  font-size: 0.9vw;
+  top: 30vh;
+}
+
+#wrap .magazine .center ul li .eye {
+  position: absolute;
+  width: 1.4vw;
+  left: 12vw;
+  top: 4vh;
+}
+
+#wrap .magazine .center ul li:nth-child(3) .txt {
+  position: absolute;
+  text-align: center;
+  left: 38vw;
+  top: 22vh;
+  line-height: 2.2;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 1.7vh;
+}
+
+#wrap .magazine .center ul li:nth-child(3) .txt .first {
+  position: relative;
+  left: 0.7vw;
+}
+
+#wrap .magazine .center ul li .gray_box1 {
+  position: absolute;
+  width: 10vw;
+  height: 3vh;
+  background-color: rgba(128, 128, 128, 0.7);
+  border-radius: 1vw;
+  left: 39.5vw;
+  top: 22.3vh;
+}
+
+#wrap .magazine .center ul li .gray_box2 {
+  position: absolute;
+  width: 15vw;
+  height: 3vh;
+  background-color: rgba(128, 128, 128, 0.7);
+  border-radius: 1vw;
+  left: 37vw;
+  top: 26vh;
+}
+
+#wrap .magazine .center ul li .insta {
+  color: white;
+  position: absolute;
+  bottom: 1vh;
+  margin-left: 0.8vw;
+  font-size: 0.8vw;
+}
+
+#wrap .magazine .center ul li:nth-child(4) .txt {
+  position: absolute;
+  top: 26vh;
+  left: 55.5vw;
+  font-size: 2vh;
+}
+
+#wrap .magazine .center ul li:nth-child(4) .txt p:nth-child(1) {
+  margin-bottom: 2vh;
+  border-bottom: 0.3vw solid white;
+  display: block;
+  width: 5.5vw;
+}
+
+#wrap .magazine .center ul li:nth-child(4) .txt p:not(:first-of-type) {
+  font-size: 2.5vh;
+}
+
+#wrap .magazine .center ul li:nth-child(5) .txt {
+  position: absolute;
+  top: 20vh;
+  left: 75vw;
+  font-size: 2.2vh;
+  text-align: center;
+  line-height: 1.8;
+}
+
+#wrap .magazine .center ul li:nth-child(5) .txt span .color {
+  color: orange;
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+#wrap .magazine .center ul li:nth-child(2),
+#wrap .magazine .center ul li:nth-child(4) {
+  position: relative;
+  top: -10vh;
+}
+
+/* footer */
+
+#wrap footer {
+  width: 100%;
+  height: 38vh;
+  background-color: black;
+  color: white;
+  position: relative
+}
+
+#wrap footer .center {
+  position: relative;
+  top: 5vh;
+}
+
+#wrap footer .f_list {
+  font-size: 0.9vw;
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  text-align: center;
+  position: relative;
+  /* top: 6vh; */
+}
+
+#wrap footer .f_list li {
+  width: 15%;
+  border-right: 0.1vh solid white;
+}
+
+#wrap footer ul.list li:last-child {
+  border-right: none;
+}
+
+#wrap footer .center .call {
+  margin-top: 5vh;
+  width: 12vw;
+  height: 20vh;
+  position: relative;
+  left: 0.1vw;
+  line-height: 1.8;
+}
+
+#wrap footer .center .call .number {
+  margin-top: 5vh;
+  display: flex;
+  font-size: 0.8vw;
+}
+
+#wrap footer .center .call .number p:nth-child(2) {
+  margin-left: 2vw;
+  color: gray;
+}
+
+#wrap footer .center .call .time {
+  font-size: 0.6vw;
+  color: gray;
+}
+
+#wrap footer .center .call .btn {
+  width: 5vw;
+  height: 3vh;
+  text-align: center;
+  line-height: 3vh;
+  border-radius: 1vh;
+  font-size: 0.6vw;
+  background-color: gray;
+  margin-top: 1.5vh;
+}
+
+#wrap footer .center .store {
+  position: absolute;
+  top: 8vh;
+  left: 25vw;
+  font-size: 0.8vw;
+}
+
+#wrap footer .center .store ul {
+  margin-top: 1.2vh;
+  font-size: 0.7vw;
+  color: gray;
+}
+
+#wrap footer .center .store ul li {
+  line-height: 1.6;
+}
+
+#wrap footer .center>p {
+  font-size: 0.8vw;
+  color: gray;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
