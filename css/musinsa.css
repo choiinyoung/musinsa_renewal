@@ -101,7 +101,7 @@ footer {
   width: 15vw;
   height: 10vh;
   position: relative;
-  top: 20vh;
+  top: 10vh;
   margin: 0 auto;
   text-align: center;
   line-height: 1.2;
@@ -133,14 +133,14 @@ footer {
   line-height: 2;
   position: absolute;
   left: 5.5vw;
-  top: 38vh;
+  top: 30vh;
 }
 
 #wrap .best .center .best_controller ul.best_product {
   display: flex;
   position: absolute;
   justify-content: space-between;
-  top: 34vh;
+  top: 27vh;
   right: 5.5vw;
   text-align: center;
   /* border: 1px solid red; */
@@ -157,7 +157,7 @@ footer {
 }
 
 #wrap .best .center ul.best_product h3 {
-  margin-top: 1.5vh;
+  margin-top: 2vh;
   margin-bottom: 1.5vh;
   font-size: 1.1vw;
 }
@@ -295,47 +295,138 @@ footer {
   margin-left: 19vw;
   z-index: 2;
 }
-
 #wrap .product .sale .sale_box .list_box {
-  width: 60vw;
+  width: 50vw;
   height: 110vh;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   z-index: 10;
 
+  display: none;
   transition: all 0.5s ease-in;
 }
 
 #wrap .product .sale .sale_box .list_box ul {
   /* display: none; */
-  /* display: none; */
   position: absolute;
   color: white;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 
   width: 90%;
   height: 80%;
   left: 0;
   right: 0;
-  top: 12vh;
+  top: 19vh;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1vw 11vh;
-}
 
+  /* padding-top: 2vh; */
+  box-sizing: border-box;
+}
+#wrap .product .sale .sale_box .list_box ul li {
+  /* border: 1px solid red; */
+  width: 26%;
+}
+#wrap .product .sale .sale_box .list_box h2 {
+  top: 9vh;
+  left: -16vw;
+  font-size: 2.8vw;
+}
+#wrap .product .sale .sale_box .list_box ul li h3 {
+  font-size: 1.2vw;
+}
+#wrap .product .sale .sale_box .list_box ul li p {
+  font-size: 1vw;
+}
+#wrap .product .sale .sale_box .list_box ul li > .line {
+  font-size: 0.8vw;
+  margin-right: 0.5vw;
+  text-decoration: line-through;
+}
+#wrap .product .sale .sale_box .list_box ul li span {
+  font-size: 1vw;
+}
 #wrap .product .sale .sale_box ul li img {
   text-align: center;
-  width: 12vw;
-  height: 27vh;
+  width: 14vw;
+  height: 31vh;
 }
 
 #wrap .product .sale .sale_box ul li img.sale6 {
   text-align: center;
-  height: 27vh;
+  height: 31vh;
 }
 
+#wrap .product .sale:hover .sale_box .list_box {
+  width: 60vw;
+  display: block;
+}
+#wrap .product .sale:hover .sale_box > h2 {
+  display: none;
+}
+
+#wrap .product .season .season_box .list_box {
+  width: 60vw;
+  height: 110vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 10;
+  /* left: 40vw; */
+  display: none;
+
+  /* display: none; */
+  transition: all 0.5s ease-in;
+}
+#wrap .product .season .season_box .list_box ul {
+  /* display: none; */
+  position: absolute;
+  color: white;
+  /* border: 1px solid white; */
+
+  width: 90%;
+  height: 80%;
+  left: 0;
+  right: 0;
+  top: 19vh;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1vw 11vh;
+
+  /* padding-top: 2vh; */
+  box-sizing: border-box;
+}
+#wrap .product .season .season_box .list_box ul li {
+  /* border: 1px solid red; */
+  width: 26%;
+}
+#wrap .product .season .season_box .list_box h2 {
+  top: 9vh;
+  left: -16vw;
+  font-size: 2.8vw;
+}
+#wrap .product .season .season_box .list_box ul li h3 {
+  font-size: 1.2vw;
+}
+#wrap .product .season .season_box .list_box ul li span {
+  font-size: 1vw;
+}
+#wrap .product .season .season_box ul li img {
+  text-align: center;
+  width: 14vw;
+  height: 31vh;
+}
+#wrap .product .season:hover .season_box .list_box {
+  left: 40vw;
+  display: block;
+}
+#wrap .product .season:hover .season_box > h2 {
+  display: none;
+}
 /* magazine */
 
 #wrap .magazine {
@@ -632,7 +723,7 @@ footer {
   line-height: 1.6;
 }
 
-#wrap footer .center>p {
+#wrap footer .center > p {
   font-size: 0.8vw;
   color: gray;
   position: absolute;
