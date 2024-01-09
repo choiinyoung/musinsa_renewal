@@ -295,14 +295,14 @@ footer {
   margin-left: 19vw;
   z-index: 2;
 }
+
 #wrap .product .sale .sale_box .list_box {
-  width: 50vw;
+  width: 60vw;
   height: 110vh;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   z-index: 10;
-
-  display: none;
+  left: -60vw;
   transition: all 0.5s ease-in;
 }
 
@@ -326,29 +326,37 @@ footer {
   /* padding-top: 2vh; */
   box-sizing: border-box;
 }
+
 #wrap .product .sale .sale_box .list_box ul li {
   /* border: 1px solid red; */
   width: 26%;
+  cursor: pointer;
 }
+
 #wrap .product .sale .sale_box .list_box h2 {
   top: 9vh;
   left: -16vw;
   font-size: 2.8vw;
 }
+
 #wrap .product .sale .sale_box .list_box ul li h3 {
   font-size: 1.2vw;
 }
+
 #wrap .product .sale .sale_box .list_box ul li p {
   font-size: 1vw;
 }
-#wrap .product .sale .sale_box .list_box ul li > .line {
+
+#wrap .product .sale .sale_box .list_box ul li>.line {
   font-size: 0.8vw;
   margin-right: 0.5vw;
   text-decoration: line-through;
 }
+
 #wrap .product .sale .sale_box .list_box ul li span {
   font-size: 1vw;
 }
+
 #wrap .product .sale .sale_box ul li img {
   text-align: center;
   width: 14vw;
@@ -361,10 +369,10 @@ footer {
 }
 
 #wrap .product .sale:hover .sale_box .list_box {
-  width: 60vw;
-  display: block;
+  left: 0;
 }
-#wrap .product .sale:hover .sale_box > h2 {
+
+#wrap .product .sale:hover .sale_box>h2 {
   display: none;
 }
 
@@ -374,12 +382,11 @@ footer {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   z-index: 10;
-  /* left: 40vw; */
-  display: none;
+  right: -60vw;
 
-  /* display: none; */
   transition: all 0.5s ease-in;
 }
+
 #wrap .product .season .season_box .list_box ul {
   /* display: none; */
   position: absolute;
@@ -400,33 +407,41 @@ footer {
   /* padding-top: 2vh; */
   box-sizing: border-box;
 }
+
 #wrap .product .season .season_box .list_box ul li {
   /* border: 1px solid red; */
   width: 26%;
+  cursor: pointer;
 }
+
 #wrap .product .season .season_box .list_box h2 {
   top: 9vh;
   left: -16vw;
   font-size: 2.8vw;
 }
+
 #wrap .product .season .season_box .list_box ul li h3 {
   font-size: 1.2vw;
 }
+
 #wrap .product .season .season_box .list_box ul li span {
   font-size: 1vw;
 }
+
 #wrap .product .season .season_box ul li img {
   text-align: center;
   width: 14vw;
   height: 31vh;
 }
+
 #wrap .product .season:hover .season_box .list_box {
-  left: 40vw;
-  display: block;
+  right: 0;
 }
-#wrap .product .season:hover .season_box > h2 {
+
+#wrap .product .season:hover .season_box>h2 {
   display: none;
 }
+
 /* magazine */
 
 #wrap .magazine {
@@ -723,7 +738,7 @@ footer {
   line-height: 1.6;
 }
 
-#wrap footer .center > p {
+#wrap footer .center>p {
   font-size: 0.8vw;
   color: gray;
   position: absolute;
