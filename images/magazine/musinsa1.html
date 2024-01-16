@@ -5,8 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>musinsa</title>
-  <link rel="stylesheet" href="css/musinsa.css" />
+  <link rel="stylesheet" href="css/musinsa1.css" />
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" /> -->
+
+  <script src="lib/jquery-3.4.1.min.js"></script>
+  <script src="lib/jquery.bxslider.min.js"></script>
+
   <style>
     .bx-wrapper {
       border: 0;
@@ -14,71 +18,8 @@
       box-shadow: none;
     }
   </style>
-  <script src="lib/jquery-3.4.1.min.js"></script>
-  <script src="lib/jquery.bxslider.min.js"></script>
-  <script src="lib/jquery.easing.1.3.js"></script>
-  <script src="lib/jquery.transit.min.js"></script>
-
-
   <script>
     $(function () {
-
-      var on_off = false;
-
-      $('.toggle_btn').click(function () {
-
-        on_off = !on_off
-
-        // aside가 안으로 들어왔을 때
-        if (on_off) {
-          $('#wrap header aside .gray_box1').animate({ left: '0' }, 1000, 'easeOutExpo');
-
-          $('.toggle_btn').animate({ left: '11vw' }, 1000, 'easeOutExpo')
-          $('.t_stick, .b_stick').animate({ top: '24px' }, 500, 'easeOutExpo').animate({ rotate: '-45deg' }, 500, 'easeOutExpo');
-          $('.m_stick').delay(500).animate({ rotate: '45deg' }, 500, 'easeOutExpo');
-
-          console.log("눌렀음")
-
-        }
-        // 밖으로 나갔을 때 
-        else {
-          $('#wrap header aside .gray_box1').animate({ left: '-15vw' }, 1000, 'easeOutExpo');
-          $('#wrap header aside .gray_box2').animate({ opacity: '0' }, 1000, 'easeOutExpo');
-          $('.toggle_btn').animate({ left: '0' }, 1000, 'easeOutExpo')
-          $(' .stick').animate({ rotate: '0' }, 500, 'easeOutExpo');
-          $('.t_stick').animate({ top: '1.5vh' }, 500, 'easeOutExpo');
-          $('.b_stick').animate({ top: '3.4vh' }, 500, 'easeOutExpo');
-
-        }
-      })
-
-      var main_btn = false;
-      $('.gray_box1 .main_title li').click(function () {
-
-        main_btn = !main_btn
-
-        if (main_btn) {
-          var index = $("li").index(this);
-          var oliindex = $("ol.sub_title");
-          console.log(index)
-          console.log(oliindex)
-          // $('#wrap header aside .gray_box2 ').animate({ opacity: '1' }, 1000, 'easeOutExpo');
-          // $('#wrap header aside .gray_box2 ol li').eq(index).animate({opacity:"1"},1000,"easeOutExpo");
-
-          $('.toggle_btn').animate({ left: '26vw' }, 1000, 'easeOutExpo')
-
-        }
-        // 들어옴
-        else {
-          $('#wrap header aside .gray_box2').animate({ opacity: '0' }, 1000, 'easeOutExpo');
-          $('#wrap header aside .gray_box1').animate({ left: '-15vw' }, 1000, 'easeOutExpo');
-          $('.toggle_btn').animate({ left: '0' }, 1000, 'easeOutExpo')
-          $(' .stick').animate({ rotate: '0' }, 500, 'easeOutExpo');
-          $('.t_stick').animate({ top: '1.5vh' }, 500, 'easeOutExpo');
-          $('.b_stick').animate({ top: '3.4vh' }, 500, 'easeOutExpo');
-        }
-      })
-
       $(".bxslider").bxSlider({
         auto: true,
         speed: 300,
@@ -93,10 +34,11 @@
         minSlides: 5,
         maxSlides: 5,
         slideWidth: 900,
-        slideMargin: 400,
+        slideMargin: 5,
         ticker: true,
-        speed: 60000,
+        speed: 80000,
         auto: true,
+        infiniteLoop: true,
         tickerHover: true,
       });
     });
@@ -107,153 +49,14 @@
   <div id="wrap">
     <header>
       <div class="center">
-        <div class="toggle_btn">
-          <span class="stick t_stick"></span>
-          <span class="stick m_stick"></span>
-          <span class="stick b_stick"></span>
-        </div>
+        <img src="images/header/icon1.png" alt="햄버거" class="list" />
         <img src="images/header/musinsa_logo.png" alt="로고" class="logo" />
-        <span class="icon">
+        <div class="icon">
           <img src="images/header/icon2.png" alt="돋보기" />
           <img src="images/header/icon3.png" alt="장바구니" />
           <img src="images/header/icon4.png" alt="사람" />
-        </span>
-      </div>
-      <aside>
-        <div class="gray_box1">
-          <ul class="main_title">
-            <li>
-              <h2>전체</h2>
-              <span>ALL</span>
-            </li>
-            <hr>
-            <li>
-              <h2>아우터</h2>
-              <span>OUTER</span>
-              <div class="gray_box2">
-                <ol class="sub_title">
-                  <li>무스탕</li>
-                  <li>패딩</li>
-                  <li>코트</li>
-                  <li>플리스</li>
-                  <li>카디건</li>
-                </ol>
-              </div>
-            </li>
-
-            <hr>
-            <li>
-              <h2>상의</h2>
-              <span>TOP</span>
-              <div class="gray_box2">
-                <ol class="sub_title">
-                  <li>니트/스웨터</li>
-                  <li>후드 티셔츠</li>
-                  <li>맨투맨</li>
-                  <li>셔츠/블라우스</li>
-                  <li>티셔츠</li>
-                </ol>
-              </div>
-            </li>
-            <hr>
-
-            <li>
-              <h2>하의</h2>
-              <span>BOTTOM</span>
-              <div class="gray_box2">
-                <ol class="sub_title">
-                  <li>데님 펜츠</li>
-                  <li>슬렉스</li>
-                  <li>트레이닝/조거 팬츠</li>
-                  <li>레깅스</li>
-                  <li>스커트 </li>
-                </ol>
-              </div>
-            </li>
-            <hr>
-
-            <li>
-              <h2>가방</h2>
-              <span>BAG</span>
-              <div class="gray_box2">
-                <ol class="sub_title">
-                  <li>백팩</li>
-                  <li>메신저/크로스백</li>
-                  <li>트레이닝/조거팬츠</li>
-                  <li>캐리어</li>
-                  <li>클러치백</li>
-                  <li>에코백</li>
-                  <li>파우치백</li>
-                </ol>
-              </div>
-            </li>
-            <hr>
-
-            <li>
-              <h2>디지털/테크</h2>
-              <span>DIGITAL/TECH</span>
-              <div class="gray_box2">
-                <ol class="sub_title">
-                  <li>휴대폰</li>
-                  <li>음향가전</li>
-                  <li>스마트기기</li>
-                  <li>태블릿</li>
-                  <li>컴퓨터</li>
-                  <li>카메라</li>
-                  <li>게임</li>
-                </ol>
-              </div>
-            </li>
-            <hr>
-
-            <li>
-              <h2>신발</h2>
-              <span>SHOES</span>
-              <div class="gray_box2">
-                <ol class="sub_title">
-                  <li>구두</li>
-                  <li>로퍼</li>
-                  <li>샌들</li>
-                  <li>슬리퍼</li>
-                  <li>부츠</li>
-                </ol>
-              </div>
-            </li>
-            <hr>
-
-            <li>
-              <h2>반려동물</h2>
-              <span>PET</span>
-              <div class="gray_box2">
-                <ol class="sub_title">
-                  <li>의류</li>
-                  <li>잡화</li>
-                  <li>용품</li>
-                  <li>푸드</li>
-                </ol>
-              </div>
-            </li>
-            <hr>
-
-            <li>
-              <h2>기타</h2>
-              <span>ACC</span>
-              <div class="gray_box2">
-                <ol class="sub_title">
-                  <li>악세사리</li>
-                  <li>선글라스/안경테</li>
-                  <li>장갑</li>
-                  <li>넥타이</li>
-                  <li>뷰티</li>
-                  <li>모자</li>
-                </ol>
-              </div>
-            </li>
-            <hr>
-
-          </ul>
         </div>
-      </aside>
+      </div>
     </header>
 
     <section>
@@ -475,11 +278,72 @@
         <div class="center">
           <h2>MUSINSA Magazine</h2>
           <ul class="magazine_slider">
-            <li><img src="images/magazine/content1.png" alt="content1"></li>
-            <li><img src="images/magazine/content2.png" alt="content2"></li>
-            <li><img src="images/magazine/content3.png" alt="content3"></li>
-            <li><img src="images/magazine/content4.png" alt="content4"></li>
-            <li><img src="images/magazine/content5.png" alt="content5"></li>
+            <li>
+              <div class="magazine_icon">
+                <img src="/images/magazine/magazine1_icon.png" alt="magazine1_icon" />
+              </div>
+              <!-- <img src="/images/magazine/magazine1.jpg" alt="magazine1" class="magazizne_img" /> -->
+
+              <div class="txt">
+                <p>도시의 일상과 골프 사이에서</p>
+                <div class="white_box">완벽한 조화</div>
+                <p>를 찾다</p>
+              </div>
+
+              <p class="insta">@18ober</p>
+            </li>
+            <li>
+              <div class="magazine_icon">
+                <img src="/images/magazine/magazine2_icon.png" alt="magazine2_icon" />
+              </div>
+              <!-- <img src="/images/magazine/magazine2.png" alt="magazine2" class="magazizne_img" /> -->
+
+              <div class="txt">
+                <p>#모던 #우아 #미니멀</p>
+                <p>#버터플라이디자인 #다채로운컬러구성</p>
+              </div>
+              <p class="insta">@nicknicole</p>
+            </li>
+            <li>
+              <div class="magazine_icon">
+                <img src="/images/magazine/magazine3_icon.png" alt="magazine3_icon" />
+              </div>
+              <!-- <img src="/images/magazine/magazine3.png" alt="magazine3" class="magazizne_img" /> -->
+              <div class="txt">
+                <p class="first">이용대 선수가 제안하는</p>
+                <p>
+                  가장 따뜻한 겨울을 보내는 방법
+                  <img src="/images/magazine/eye.png" alt="eye" class="eye" />
+                </p>
+              </div>
+              <p class="insta">@mpacplus</p>
+              <div class="gray_box1"></div>
+              <div class="gray_box2"></div>
+            </li>
+            <li>
+              <div class="magazine_icon">
+                <img src="/images/magazine/magazine4_icon.png" alt="magazine4_icon" />
+              </div>
+              <!-- <img src="/images/magazine/magazine4.png" alt="magazine4" class="magazizne_img" /> -->
+
+              <div class="txt">
+                <p>스타일 추천</p>
+                <p>담백하지만</p>
+                <p>강력하고! 덤덤하게!</p>
+              </div>
+              <p class="insta">@magiay</p>
+            </li>
+            <li>
+              <div class="magazine_icon">
+                <img src="/images/magazine/magazine5_icon.png" alt="magazine5_icon" />
+              </div>
+              <!-- <img src="/images/magazine/magazine5.png" alt="magazine5" class="magazizne_img" /> -->
+              <div class="txt">
+                <p>겨울에 진심인 블랭크룸의</p>
+                <span> <span class="color">3가지 아우터</span> 추천 </span>
+              </div>
+              <p class="insta">@blankroom</p>
+            </li>
           </ul>
         </div>
       </div>
