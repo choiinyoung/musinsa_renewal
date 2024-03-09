@@ -603,19 +603,28 @@ footer {
   width: 90%;
   /* border: 1px solid; */
   position: relative;
-  height: 60vh;
-  top: 25vh;
+  height: 65vh;
+  top: 30vh;
   margin: 0 auto;
 }
 
 .magazine .center .bx-viewport {
   position: absolute;
   width: 90%;
-  /* height: 130vh; */
+  height: 100%;
   padding: 6.5vh 0;
+  display: inline;
+
   /* border: 1px solid red; */
 }
-
+/* .magazine .center .bx-wrapper .bx-viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 76%;
+  border: 1px solid;
+  display: inline;
+} */
 .magazine .center .magazine_slider {
   height: 50vh;
 }
